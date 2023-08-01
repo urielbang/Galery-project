@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+.imgSlider {
+  margin: auto;
+  width: 60vw;
+  height: 70vh;
+  border: 3px solid #121c02da;
+  padding: 10px;
+  background-image: url(./fotos/3.jpg);
+  background-size: 100% 100%;
+  animation-name: slider;
+  animation-duration: 20s;
+}
+
+h1 {
+  text-align: center;
+}
+@keyframes slider {
+  0% {
+    background-image: url(./fotos/3.jpg);
+  }
+  20% {
+    background-image: url(./fotos/1.jpg);
+  }
+  30% {
+    background-image: url(fotos/2.jpg);
+  }
+  45% {
+    background-image: url(fotos/4.jpg);
+  }
+  60% {
+    background-image: url(fotos/5.jpg);
+  }
+  70% {
+    background-image: url(fotos/6.jpg);
+  }
+  80% {
+    background-image: url(fotos/7.jpg);
+  }
+  90% {
+    background-image: url(fotos/8.jpg);
+  }
+  100% {
+    background-image: url(fotos/9.jpg);
+  }
+}
+nav {
+  background-image: linear-gradient(
+      to left,
+      rgb(17, 0, 255),
+      rgb(208, 255, 0),
+      rgb(255, 0, 119)
+    ),
+    url("../../media/examples/lizard.png");
+  width: 100vw;
+  height: 5vw;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.434);
+  font-size: 40px;
+}
