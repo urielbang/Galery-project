@@ -3,30 +3,29 @@ body {
 }
 
 .header {
-  width: 100vw;
+  width: 80vw;
   height: 65vh;
   display: flex;
-  justify-content: space-between;
+  margin: auto;
 }
 
 .header div {
   width: 30%;
   height: 100%;
 
-  border: solid;
   padding: 5px;
 }
 .sliderOne {
-  background-image: url(fotos/1.jpg);
+  background-image: url(fotos/3.jpg);
   background-size: 100% 100%;
 
-  animation-name: slider;
+  animation-name: sliderSecondA;
   animation-duration: 20s;
 }
 .sliderTwo {
   background-image: url(fotos/2.jpg);
   background-size: 100% 100%;
-  animation-name: slider;
+  animation-name: sliderSecondB;
   animation-duration: 20s;
 }
 .sliderThree {
@@ -34,4 +33,62 @@ body {
   background-size: 100% 100%;
   animation-name: slider;
   animation-duration: 20s;
+}
+@keyframes sliderSecondA {
+  0% {
+    background-image: url(fotos/7.jpg);
+  }
+  20% {
+    background-image: url(./fotos/4.jpg);
+  }
+  30% {
+    background-image: url(fotos/3.jpg);
+  }
+  45% {
+    background-image: url(fotos/2.jpg);
+  }
+  60% {
+    background-image: url(fotos/1.jpg);
+  }
+  70% {
+    background-image: url(fotos/6.jpg);
+  }
+  80% {
+    background-image: url(fotos/8.jpg);
+  }
+  90% {
+    background-image: url(fotos/7.jpg);
+  }
+  100% {
+    background-image: url(fotos/6.jpg);
+  }
+}
+@keyframes sliderSecondB {
+  0% {
+    background-image: url(fotos/5.jpg);
+  }
+  20% {
+    background-image: url(./fotos/2.jpg);
+  }
+  30% {
+    background-image: url(fotos/1.jpg);
+  }
+  45% {
+    background-image: url(fotos/3.jpg);
+  }
+  60% {
+    background-image: url(fotos/4.jpg);
+  }
+  70% {
+    background-image: url(fotos/6.jpg);
+  }
+  80% {
+    background-image: url(fotos/7.jpg);
+  }
+  90% {
+    background-image: url(fotos/8.jpg);
+  }
+  100% {
+    background-image: url(fotos/9.jpg);
+  }
 }
