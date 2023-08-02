@@ -1,0 +1,15 @@
+.SliderThree {
+  margin: auto;
+  width: 60vw;
+  height: 70vh;
+  border: 3px solid;
+  animation-play-state: paused;
+  background-size: 100% 100%;
+  background-image: url(fotos/5.jpg);
+
+  text-align: center;
+}
+.SliderThree:hover {
+  animation: slider 10s;
+  animation-play-state: running;
+}
