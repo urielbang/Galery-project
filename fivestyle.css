@@ -1,0 +1,107 @@
+.sliderFive {
+  display: flex;
+
+  width: 100vw;
+  height: 80vh;
+}
+.sliderFive div {
+  width: 30vw;
+  height: 30vh;
+  border: solid;
+  align-self: center;
+}
+.slid1 {
+  background-image: url(fotos/1.jpg);
+  background-size: contain;
+  animation-name: newSliderFour;
+  animation-duration: 20s;
+  animation-play-state: paused;
+}
+.slid2 {
+  background-image: url(fotos/1.jpg);
+  background-size: contain;
+  animation-name: newSliderFour;
+  animation-duration: 20s;
+  animation-play-state: paused;
+}
+.slid3 {
+  background-image: url(fotos/1.jpg);
+  background-size: contain;
+  animation-name: newSliderFour;
+  animation-duration: 20s;
+  animation-play-state: paused;
+}
+.right5 {
+  width: 10vw;
+  height: 10vh;
+  order: 5;
+  z-index: 5;
+}
+.left5 {
+  width: 10vw;
+  height: 10vh;
+  z-index: 3;
+}
+.right5:hover {
+  opacity: 50%;
+}
+.left5:hover {
+  opacity: 50%;
+}
+.chek1 {
+  order: -1;
+  width: 20%;
+  appearance: none;
+  position: relative;
+  bottom: 34vh;
+  left: 9vw;
+  overflow-y: hidden;
+}
+.chhek2 {
+  width: 20%;
+  position: relative;
+  bottom: 31vh;
+  appearance: none;
+  left: 10vw;
+  overflow: hidden;
+}
+.chek1:checked ~ .slid1 {
+  animation-play-state: running;
+  animation-direction: normal;
+}
+.chhek2:checked + .slid1 {
+  animation-play-state: running;
+  animation-direction: reverse;
+}
+@keyframes newSliderFour {
+  0% {
+    background-image: url(fotos/2.jpg);
+  }
+  10% {
+    background-image: url(fotos/3.jpg);
+  }
+  20% {
+    background-image: url(fotos/4.jpg);
+  }
+  30% {
+    background-image: url(fotos/5.jpg);
+  }
+  40% {
+    background-image: url(fotos/6.jpg);
+  }
+  50% {
+    background-image: url(fotos/7.jpg);
+  }
+  60% {
+    background-image: url(fotos/8.jpg);
+  }
+  70% {
+    background-image: url(fotos/9.jpg);
+  }
+  80% {
+    background-image: url(fotos/1.jpg);
+  }
+  90% {
+    background-image: url(fotos/2.jpg);
+  }
+}
